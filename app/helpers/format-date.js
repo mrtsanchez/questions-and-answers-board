@@ -1,7 +1,6 @@
 import Ember from 'ember';
+import moment from 'moment';
 
-export function formatDate(params/*, hash*/) {
-  return params;
-}
-
-export default Ember.Helper.helper(formatDate);
+export default Ember.Helper.helper('formatDate',function(date) {
+  return moment(date).format();
+});
