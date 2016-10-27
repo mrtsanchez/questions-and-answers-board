@@ -1,0 +1,50 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #EFF1F3;
+}
+
+.title, h1, h3 {
+  font-family: 'Bree Serif', serif;
+}
+
+.navbar-default .navbar-brand {
+    color: #960200;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin:0 auto;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-toggle {
+  z-index:3;
+}
+
+.jumbotron {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/50/Portland_panorama3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.jumbotron-text{
+  color: #272727;
+  text-align: right;
+}
+
+.jumbotron-text h2{
+  color: #272727;
+  background-color: #EFF1F3;
+  padding: 10px;
+}
+
+.question-tile {
+  background-color: white;
+}

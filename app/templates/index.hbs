@@ -1,12 +1,21 @@
 
-<ul>
-{{#each model.questions as |question|}}
-<li>{{question.questiontitle}}</li>
- {{/each}}
- </ul>
+<div class="row">
+  <div class="col-md-4">
+    <div class="well">
+      <h2 class="title">Categories:</h2>
+        <ul class="list-group">
+          {{#each model.questions as |question|}}
+            {{questions-categories question=question}}
+          {{/each}}
+        </ul>
+    </div>
+  </div>
+  <div class="col-md-8">
+    {{#each model.questions as |question|}}
+      {{question-tiles question=question}}
+    {{/each}}
+    {{#each model.answers as |answer|}}
 
-<ul>
- {{#each model.answers as |answer|}}
- <li>{{answer.answer}}</li>
-  {{/each}}
-</ul>
+    {{/each}}
+  </div>
+</div>
