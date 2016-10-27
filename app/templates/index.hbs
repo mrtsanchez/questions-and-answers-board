@@ -1,6 +1,13 @@
 <h1>questions and so</h1>
 
-
-{{#each model as |question|}}
+<ul>
+{{#each model.questions as |question|}}
 <li>{{question.questiontitle}}</li>
  {{/each}}
+ </ul>
+
+<ul>
+ {{#each model.answers as |answer|}}
+ <li>{{answer.answer}}</li>
+  {{/each}}
+</ul>
