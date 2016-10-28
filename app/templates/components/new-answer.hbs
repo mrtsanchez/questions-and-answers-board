@@ -16,11 +16,11 @@
     {{input value=date type="date" id="date" class="form-control"}}
   </div>
 
-  <button {{action 'saveAnswer'}}>Submit This Answer</button>
+  <button class="btn btn-info btn-lg btn-block" {{action 'saveAnswer'}}>Submit This Answer</button>
 </form>
 {{else}}
 <div class=" text-right">
-  <button {{action 'showAnswerForm'}} class="btn btn-default">Answer this question</button>
+  <button {{action 'showAnswerForm'}} class="btn btn-info btn-answer">Answer this question</button>
 </div>
 
 {{/if}}

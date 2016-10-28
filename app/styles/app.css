@@ -1,14 +1,22 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: #EFF1F3;
+  color: #272727;
 }
 
-.title, h1, h3 {
+.title, h1, h2 {
   font-family: 'Bree Serif', serif;
 }
 
+h3 {
+  color: #960200;
+  font-family: 'Bree Serif', serif;
+}
+
+/*navbar styles*/
+
 .navbar-default .navbar-brand {
-    color: #960200;
+    color: #AD343E;
 }
 
 .navbar-brand {
@@ -26,6 +34,12 @@ body {
 .navbar-toggle {
   z-index:3;
 }
+
+.new-question{
+  background-color: #AD343E;
+}
+
+/*header*/
 
 .jumbotron {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/50/Portland_panorama3.jpg");
@@ -45,10 +59,32 @@ body {
   padding: 10px;
 }
 
+/*content display*/
+
 .question-tile {
   background-color: white;
 }
 
-.display-date {
+.new-answer-tile{
+  background-color: #EFF1F3;
+}
+
+.display-author {
   color: #009FB7;
+}
+
+.display-answer {
+  background-color: #e5f5f7;
+}
+
+.answer-fields {
+  font-weight: bold;
+}
+
+.btn-answer, .btn-answer:hover, .btn-answer:active, .btn-answer:visited {
+    background-color: #009FB7 !important;
+}
+
+.ask-question{
+  background-color: #009FB7;
 }

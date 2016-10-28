@@ -1,4 +1,4 @@
-  <h3>{{question.questiontitle}}</h3>
+  <h2>{{question.questiontitle}}</h2>
   <p>
     <span class="display-date">{{question.author}}, </span>{{question.date}}.
   </p>
@@ -6,12 +6,10 @@
     {{break-lines question.details}}
   </p>
 
-  <h2>Answers</h2>
+  <h3>Answers</h3>
 
-<div class="well">
-  <ul>
-      {{# each question.answers as |answer|}}
-      {{answer-tile answer=answer}}
-      {{/each}}
-  </ul>
+<div class="well display-answer">
+  {{# each question.answers as |answer|}}
+  {{answer-tile answer=answer}}
+  {{/each}}
 </div>
