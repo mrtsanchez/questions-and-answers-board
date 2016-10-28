@@ -6,13 +6,12 @@
     {{break-lines question.details}}
   </p>
 
-<!-- <div class="well"> -->
+  <h2>Answers</h2>
 
-  <!-- {{#each question.answers as |answer|}}
-    {{answer.answer}}
-  {{/each}} -->
-
-  <!-- {{#each question.answers as |answer|}}
-     {{answer-tile answer=answer}}
-   {{/each}}
+<div class="well">
+  <ul>
+      {{# each question.answers as |answer|}}
+      {{answer-tile answer=answer}}
+      {{/each}}
+  </ul>
 </div>

@@ -4,20 +4,15 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
-  addNewAnswer: false,
   actions: {
-    showAnswerForm() {
-      this.set('addNewAnswer', true);
-    },
-    saveAnswer() {
-     var params = {
-       author: this.get('author'),
-       answer: this.get('answer'),
-       date: this.get('date'),
-       question: this.get('question')
-     };
-     this.set('addNewAnswer', false);
-     this.sendAction('saveAnswer', params);
-   }
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function(){
+        return question.save();
+      });
+      this.transitionTo('index');
+    }
   }
 });
