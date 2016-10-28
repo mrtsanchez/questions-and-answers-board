@@ -19,5 +19,8 @@
   <button {{action 'saveAnswer'}}>Submit This Answer</button>
 </form>
 {{else}}
-<button {{action 'showAnswerForm'}} class="btn btn-default">Answer this question</button>
+<div class=" text-right">
+  <button {{action 'showAnswerForm'}} class="btn btn-default">Answer this question</button>
+</div>
+
 {{/if}}
