@@ -1,36 +1,51 @@
 { "questions": [{
     "questiontitle": "International Banking with checking accounts?",
-    "category": "Banking",
     "author": "Veruca Salt",
     "details": "Hi, we are moving and will be going back and forth between Portland and Austria a lot and will be working in both places too. /n Any suggestions for truly international banks that allow checking accounts that work in both places without incurring extra fees, etc. thanks!",
-    "date": "2016/09/23"
+    "category": "Banking",
+    "date": "2016/09/23",
+    "answers": { "1": true }
   }, {
     "questiontitle": "Bank Comissions on International Wires ",
-    "category": "Banking",
     "author": "Jhon Snow",
+    "category": "Banking",
     "details": "I was wondering if anybody had experience on international wires. Particularly, I am interested in the comission that banks charge... There are two types of comission: /n 1. For the wire itself... i.e. to send the money. It's normally a flat rate or fix amount. Not very significant. /n 2. For the currency exchange... let's say buying USD from Euros. This comission is a percentage and it may become a very significant amount of money. I am mostly worried about the second comission or currency exchange comission. /n My research on two Spanish banks (BBVA and La Caixa) shows that, to purchase USD from EUROS, they charge you 0.65 % and 0.5 % of comission... Does anybody know if this is as good as it gets? Or did you guys enjoy lower rates? /n Thanks a lot!",
-    "date": "2016/10/20"
+    "date": "2016/10/20",
+    "answers": { "2": true }
   }, {
     "questiontitle": "Some advice on choosing a neighborhood ",
-    "category": "Rental",
     "author": "Fabio Ruben",
+    "category": "Rental",
     "details": "Dear All, /n I am considering to move to NY for work, and before I can make a call, I need to do the maths and check how much my cost of living would be over there. I guess rent would play a major role on my expenses, so I would like to ask you guys some questions. /n Which neighborhoods do you recommend me to look at? I would like something with a good balance between being safe, not too expensive and not too far from downtonw. /n Also, which websites would you recommend me to use for doing some research? /n Thanks, /n Fabio",
-    "date": "2016/07/11"
+    "date": "2016/07/11",
+    "answers": {
+      "0": true
+    }
   }],
-"answers": [{
-    "answer": "Hey Fabio, /n Look at housing, go for rental by owner - possible to find no broker fee. Use the filters by map to see what you can pick at. /n Neighborhoods /n If yo'ure stuck on proximity to downtonw, don't stay anywhere north of 14th-ish street, though the commute by train isn't that bad and may be you'll actually really like the areas.",
-    "author": "Trotamundos",
-    "date": "2016/10/20",
-    "question_id": 2
-  }, {
-    "answer": "Try Chase or Citi Bank.... ING as well but they are not a bank in the USA.",
-    "author": "Julie August",
-    "date": "2016/10/24",
-    "question_id": 0
-  }, {
-    "answer": "Hi David, /n Citibank charges USD 30 per wire (flat fee, your point 1). My experience is that wiring money to Europe in USD instead of EUR gives you a much better exchange rate. When I wire money into my German account, my German bank uses pretty much the interbank exchange rate to convert the USD amount into EUR, whereas Citi charges almost 2.5% (!) for wiring EUR from the U.S. to Germany. /n Don't know how this works the other way round, i.e., wiring EUR from a European account into a U.S. account, as I've never done this. /n Hope this might be helpful. /n Cheers, /n Manuela",
-    "author": "Manuela Smith",
-    "date": "2016/10/24",
-    "question_id": 1
+  "answers": [{
+      "answer": "Hey Fabio, /n Look at housing, go for rental by owner - possible to find no broker fee. Use the filters by map to see what you can pick at. /n Neighborhoods /n If yo'ure stuck on proximity to downtonw, don't stay anywhere north of 14th-ish street, though the commute by train isn't that bad and may be you'll actually really like the areas.",
+      "author": "Trotamundos",
+      "date": "2016/10/20"
+    }, {
+      "answer": "Try Chase or Citi Bank.... ING as well but they are not a bank in the USA.",
+      "author": "Julie August",
+      "date": "2016/10/24"
+    }, {
+      "answer": "Hi David, /n Citibank charges USD 30 per wire (flat fee, your point 1). My experience is that wiring money to Europe in USD instead of EUR gives you a much better exchange rate. When I wire money into my German account, my German bank uses pretty much the interbank exchange rate to convert the USD amount into EUR, whereas Citi charges almost 2.5% (!) for wiring EUR from the U.S. to Germany. /n Don't know how this works the other way round, i.e., wiring EUR from a European account into a U.S. account, as I've never done this. /n Hope this might be helpful. /n Cheers, /n Manuela",
+      "author": "Manuela Smith",
+      "date": "2016/10/24"
+    }],
+"categories": [{
+    "Banking": {
+      "0": true,
+      "1": true,
+      "2": false
+    },
+    "Rental": {
+      "0": false,
+      "1": false,
+      "2": true
+    }
+
   }]
 }

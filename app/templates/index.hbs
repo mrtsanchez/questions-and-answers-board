@@ -18,5 +18,19 @@
       <h1>Ask a new Question</h1>
       {{new-question question=question askQuestion="askQuestion"}}
     </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        {{#each model.answers as |answer|}}
+        <ul>
+        <li>{{answer.date}}</li>
+        <li>{{answer.author}}</li>
+        <li>{{answer.answer}}</li>
+        </ul>
+        {{/each}}
+      </div>
+    </div>
+
+
   </div>
 </div>
