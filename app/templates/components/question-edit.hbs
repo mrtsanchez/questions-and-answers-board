@@ -32,7 +32,7 @@
         <label for="date">Date</label>
         {{input value=question.date type="date" id="date" class="form-control"}}
       </div>
-      <button class="btn btn-warning btn-lg btn-block" {{action 'updateQuestion'}}>Save changes</button>
+      <button class="btn btn-warning btn-lg btn-block" {{action 'update' question}}>Save changes</button>
     </form>
     {{/if}}
   </div>

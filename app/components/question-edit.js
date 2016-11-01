@@ -13,7 +13,7 @@ export default Ember.Component.extend({
       this.set('updateQuestionForm', true);
       this.set('displayQuestion', false);
     },
-    updateQuestion(question) {
+    update(question) {
       var params = {
         questiontitle: this.get('questiontitle'),
         category: this.get('category'),
