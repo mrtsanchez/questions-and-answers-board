@@ -1,5 +1,5 @@
 <div class="well question-tile">
-  <h3>{{#link-to 'question' question.id}}{{question.questiontitle}}{{/link-to}}</h3>
+  <h3>{{question-popularity question}} {{#link-to 'question' question.id}}{{question.questiontitle}}{{/link-to}}</h3>
   <p>
     <span class="display-author">{{question.author}}, </span>{{question.date}}.
   </p>

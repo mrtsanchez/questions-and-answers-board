@@ -11,6 +11,9 @@ export default Ember.Component.extend({
         date: this.get('date'),
       };
       this.sendAction('askQuestion', params);
+    },
+    updateValue(value){
+      this.set('category', value);
     }
   }
 });

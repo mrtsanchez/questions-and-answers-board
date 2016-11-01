@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updateQuestion: false,
+  updateQuestionForm: false,
   displayQuestion: true,
   actions: {
     delete(question) {
@@ -10,7 +10,7 @@ export default Ember.Component.extend({
         }
     },
     showUpdateForm(){
-      this.set('updateQuestion', true);
+      this.set('updateQuestionForm', true);
       this.set('displayQuestion', false);
     },
     updateQuestion(question) {
@@ -21,9 +21,9 @@ export default Ember.Component.extend({
         details: this.get('details'),
         date: this.get('date'),
       };
-      this.set('updateQuestion', false);
+      this.set('updateQuestionForm', false);
       this.set('displayQuestion', true);
-      this.sendAction('update', question, params);
+      this.sendAction('updateQuestion', question, params);
     }
   }
 });

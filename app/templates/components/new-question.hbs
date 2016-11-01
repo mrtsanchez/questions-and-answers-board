@@ -11,7 +11,7 @@
 
     <div class="form-group">
       <label for="category">Choose a category:</label>
-      <select class="form-control" id="category">
+      <select class="form-control" id="category" onchange={{action "updateValue" value="target.value"}} >
         <option value="Banking" selected="selected">Banking</option>
         <option value="Rental">Rental</option>
         <option value="Education">Education</option>
