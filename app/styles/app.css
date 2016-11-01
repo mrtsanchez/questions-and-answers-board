@@ -92,3 +92,9 @@ h3 {
 .categories-list {
   background-color: #f0ad4e;
 }
+
+/*edit and delete questions*/
+
+.btn-trash {
+  margin-right: 10px;
+}
