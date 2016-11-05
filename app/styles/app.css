@@ -89,8 +89,16 @@ h3 {
   background-color: #009FB7;
 }
 
+/*sidebar*/
+
 .categories-list {
   background-color: #f0ad4e;
+}
+
+.categories-list a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 1.5em;
 }
 
 /*edit and delete questions*/

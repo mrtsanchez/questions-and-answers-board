@@ -1,27 +1,10 @@
 
-<div class="row">
-  <div class="col-md-4">
-    <div class="well categories-list">
-      <h2 class="title">Categories:</h2>
-        <ul class="list-group">
-          <li class="list-group-item">{{#link-to 'banking'}}Banking{{/link-to}}</li>
-          <li class="list-group-item">{{#link-to 'rental'}}Rental{{/link-to}}</li>
-          <li class="list-group-item">{{#link-to 'education'}}Education{{/link-to}}</li>
-          <li class="list-group-item">{{#link-to 'living'}}Living{{/link-to}}</li>
-
-          <!-- {{#each model.questions as |question|}}
-            {{category-tiles question=question}}
-          {{/each}} -->
-        </ul>
-    </div>
-  </div>
-  <div class="col-md-8">
     {{#each model.questions as |question|}}
       {{question-tiles question=question}}
     {{/each}}
+
+
     <div class="well ask-question" id="new-question">
       <h1>Ask a new Question</h1>
       {{new-question question=question askQuestion="askQuestion"}}
     </div>
-  </div>
-</div>
