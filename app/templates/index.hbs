@@ -4,10 +4,10 @@
     <div class="well categories-list">
       <h2 class="title">Categories:</h2>
         <ul class="list-group">
-          <li class="list-group-item">Banking</li>
-          <li class="list-group-item">Rental</li>
-          <li class="list-group-item">Education</li>
-          <li class="list-group-item">Living</li>
+          <li class="list-group-item">{{#link-to 'banking'}}Banking{{/link-to}}</li>
+          <li class="list-group-item">{{#link-to 'rental'}}Rental{{/link-to}}</li>
+          <li class="list-group-item">{{#link-to 'education'}}Education{{/link-to}}</li>
+          <li class="list-group-item">{{#link-to 'living'}}Living{{/link-to}}</li>
 
           <!-- {{#each model.questions as |question|}}
             {{category-tiles question=question}}

@@ -11,6 +11,10 @@ Router.map(function() {
   this.route('admin');
   this.route('edit', {path: '/edit-question/:question_id'});
   this.route('category', {path: '/category/:question_category'});
+  this.route('banking');
+  this.route('education');
+  this.route('living');
+  this.route('rental');
 });
 
 export default Router;
