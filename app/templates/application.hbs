@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="navbar-left">
-        <a role="button" class="btn btn-danger navbar-btn new-question" href="/#new-question">Ask a new Question</a>
+        {{#link-to 'ask' class='btn btn-danger navbar-btn new-question'}}Ask a new Question{{/link-to}}
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/admin">Admin</a></li>
@@ -50,7 +50,7 @@
             <li class="list-group-item">{{#link-to 'living'}}Living{{/link-to}}</li>
           </ul>
       </div>
-        <img src="https://images.unsplash.com/photo-1461950209984-1ce1f03a1be9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=fe7730e5485b9a33345316f93ceee0e6" class="img-responsive" alt="ask more questions" />
+        {{#link-to 'ask'}}<img src="https://images.unsplash.com/photo-1461950209984-1ce1f03a1be9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=fe7730e5485b9a33345316f93ceee0e6" class="img-responsive" alt="ask more questions" />{{/link-to}}
     </div>
     <div class="col-md-8">
       {{outlet}}

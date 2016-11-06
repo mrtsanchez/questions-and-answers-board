@@ -39,6 +39,9 @@ h3 {
   background-color: #AD343E;
 }
 
+
+
+
 /*header*/
 
 .jumbotron {
@@ -74,7 +77,7 @@ h3 {
 }
 
 .display-answer {
-  background-color: #e5f5f7;
+  background-color: #EFF1F3;
 }
 
 .answer-fields {
@@ -87,6 +90,11 @@ h3 {
 
 .ask-question{
   background-color: #009FB7;
+}
+
+.display-votes {
+  color: #6a737c;
+  font-size: 2em;
 }
 
 /*sidebar*/

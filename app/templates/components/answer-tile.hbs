@@ -1,7 +1,17 @@
 <div class="well display-answer">
+  <div class="row">
+      <div class="col-md-10">
+        <h4>Answered in: <small>{{answer.date}}</small></h4>
+        <h4>Answer by: <small>{{answer.author}}</small></h4>
+        {{break-lines answer.answer}}
+      </div>
+      <div class="col-md-2 display-votes text-right">
+        <span {{action 'upvote' answer}} class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
 
-<h4>Answered in: <small>{{answer.date}}</small></h4>
-<h4>Answer by: <small>{{answer.author}}</small></h4>
-{{break-lines answer.answer}}
-
+        <p>
+          {{answer.votes}}
+        </p>
+        <span {{action 'downvote' answer}} class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      </div>
+  </div>
 </div>

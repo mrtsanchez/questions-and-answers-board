@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('education');
   this.route('living');
   this.route('rental');
+  this.route('ask');
 });
 
 export default Router;

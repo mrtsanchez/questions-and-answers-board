@@ -13,6 +13,14 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('index');
+    },
+    upvote(answer){
+      answer.incrementProperty('votes', 1);
+      answer.save();
+    },
+    downvote(answer){
+      answer.decrementProperty('votes', 1);
+      answer.save();
     }
   }
 });
