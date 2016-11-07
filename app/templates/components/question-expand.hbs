@@ -8,6 +8,6 @@
 
   <h3>Answers</h3>
 
-  {{# each question.answers as |answer|}}
+  {{# each sortedAnswers as |answer|}}
   {{answer-tile answer=answer upvote="upvote" downvote="downvote"}}
   {{/each}}
