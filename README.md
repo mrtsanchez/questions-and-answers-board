@@ -53,6 +53,7 @@ Specify what it takes to deploy your app.
 * Users should be able to click on a question to view additional information.
 * Allow users to add and edit questions.
 * Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
+* Allow users to upvote the answer they think is best, then sort answers by number of upvotes.
 
 ## Further Reading / Useful Links
 
