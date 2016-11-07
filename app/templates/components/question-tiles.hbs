@@ -1,7 +1,21 @@
 <div class="well question-tile">
-  <h3>{{question-popularity question}} {{#link-to 'question' question.id}}{{question.questiontitle}}{{/link-to}}</h3>
-  <p>
-    <span class="display-author">{{question.author}}, </span>{{question.date}}.
-  </p>
-
+  <!-- <div class="row">
+    <div class="col-md-12">
+      {{#each userActions.favQuestions as |favQuestion|}}
+        {{favQuestion.author}} {{favQuestion.date}}
+      {{/each}}
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-10">
+      <h3>{{question-popularity question}} {{#link-to 'question' question.id}}{{question.questiontitle}}{{/link-to}}</h3>
+      <p>
+        <span class="display-author">{{question.author}}, </span>{{question.date}}.
+      </p>
+    </div>
+    <div class="col-md-2 text-center fav-question">
+      {{#if QuestionNoFav}}<span {{action 'favQuestion' question}} class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>{{/if}}
+      {{#if QuestionFav}}<span {{action 'removeFavQuestion' question}} class="glyphicon glyphicon-star" aria-hidden="true"></span>{{/if}}
+    </div>
+  </div>
 </div>
