@@ -1,5 +1,5 @@
 
     {{#each userActions.favQuestions as |favQuestion|}}
-      <dt>{{favQuestion.questiontitle}}</dt>
+      <dt>{{#link-to 'question' favQuestion.id}}{{favQuestion.questiontitle}}{{/link-to}}</dt>
       <dd>{{favQuestion.author}}, {{favQuestion.date}}</dd>
     {{/each}}
