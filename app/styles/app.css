@@ -61,7 +61,7 @@ h3 {
 
 /*content display*/
 
-.question-tile {
+.question-tile .list-favs {
   background-color: white;
 }
 
@@ -70,6 +70,10 @@ h3 {
 }
 
 .display-author {
+  color: #009FB7;
+}
+
+dd {
   color: #009FB7;
 }
 
